@@ -14,7 +14,7 @@ describe Product do
 	end
 
 	it "doesn't run without a image_url" do
-		expect(build(:product, image_url: nil)).to be_valid#have(1).errors_on(:image_url) 
+		expect(build(:product, image_url: nil)).to have(1).errors_on(:image_url) 
 	end
 
 	it "doesn't run with a price at $0.00" do
